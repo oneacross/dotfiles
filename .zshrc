@@ -4,7 +4,7 @@ promptinit
 
 prompt off
 
-alias ls='ls --color=auto'
+alias ls="ls -G"
 alias l='ls -artl'
 
 export PROMPT="%{$fg[magenta]%}$ %{$reset_color%}"
