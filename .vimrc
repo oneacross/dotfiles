@@ -47,6 +47,8 @@ set scrolloff=10
 " shortcut to repidly toggle `set list`
 nmap <leader>l :set list!<CR>
 
+map <leader>w :set invwrap<CR>
+
 " copying
 noremap <S-insert> <MiddleMouse>
 inoremap <S-insert> <MiddleMouse>
