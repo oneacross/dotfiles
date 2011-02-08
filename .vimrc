@@ -32,7 +32,7 @@ set ruler
 
 set cursorline
 
-color koehler2
+color koehler
 
 set nonumber
 set incsearch
