@@ -3,6 +3,7 @@ compinit
 promptinit
 
 autoload -U colors && colors
+setopt interactive_comments
 
 prompt off
 
