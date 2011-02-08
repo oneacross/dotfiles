@@ -2,6 +2,8 @@ autoload -U compinit promptinit
 compinit
 promptinit
 
+autoload -U colors && colors
+
 prompt off
 
 alias ls="ls -G"
