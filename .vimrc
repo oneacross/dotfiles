@@ -7,11 +7,9 @@ map H 20k
 
 set backspace=indent,eol,start
 
-" save some typing
-inoremap () ()<Left>
-inoremap [] []<Left>
-inoremap '' ''<Left>
-inoremap "" ""<Left>
+" indent 0 characters after an open parenthesis
+set cinoptions=(0
+
 " sweet enter functionality (goes with above)
 inoremap <C-J> o
 inoremap <C-L> la
@@ -32,7 +30,9 @@ set ruler
 
 set cursorline
 
-color koehler
+colorscheme default
+set background=dark
+hi CursorLine cterm=none
 
 set nonumber
 set incsearch
