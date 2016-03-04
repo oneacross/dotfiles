@@ -1,6 +1,11 @@
+[user]
+    name = Matt Mendell
+    email = matthew.mendell@gmail.com
+
 [core]
     pager = less
     editor = vim
+    excludesfile = ~/.gitignore
 
 [color]
     ui = auto
@@ -9,4 +14,18 @@
     tool = vimdiff
 
 [alias]
-    gr = log --graph --full-history --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
+    aa = add --all
+    amend = commit --amend
+    b = branch
+    ci = commit
+    co = checkout
+    di = diff
+    ds = diff --staged
+
+    l = "!source ~/.githelpers && pretty_git_log"
+    la = !git l --all
+    r = !git l -20
+    ra = !git r --all
+
+    st = status
+
