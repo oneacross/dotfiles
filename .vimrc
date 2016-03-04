@@ -2,8 +2,8 @@
 let mapleader = ","
 
 " An easy page up/down
-map L 20j
-map H 20k
+map L 10j
+map H 10k
 
 set backspace=indent,eol,start
 
@@ -27,14 +27,7 @@ set textwidth=79
 
 " Constant ruler in bottom screen
 set ruler
-
-set cursorline
-
-colorscheme default
-set background=dark
-hi CursorLine cterm=none
-
-set nonumber
+set number
 set incsearch
 set ignorecase
 set wrap
@@ -42,7 +35,13 @@ set linebreak
 set hlsearch
 
 " lines of context when scrolling
-set scrolloff=10
+set scrolloff=5
+
+set cursorline
+
+colorscheme default
+set background=dark
+hi CursorLine cterm=none
 
 " shortcut to repidly toggle `set list`
 nmap <leader>l :set list!<CR>
@@ -78,19 +77,6 @@ map <Leader>e :edit =expand("%:p:h") . "/"
 map <Leader>s :split =expand("%:p:h") . "/"
 map <Leader>v :vsplit =expand("%:p:h") . "/"
 
-" Save files
-map ss :w
-map sq :wq
-
-" fix backspace in xterm and screen
-"if &term == "xterm"
-"    set t_kb=
-"    fixdel
-"elseif &term == "screen"
-"    set t_kb=
-"    fixdel
-"endif
-
 " bash
 set shell=bash
 
@@ -100,5 +86,3 @@ au BufNewFile,BufRead *.tcl,*.*tcl,*.tk,*.itcl,*.itk,*.jacl	setf tcl
 " JavaScript, ECMAScript
 au BufNewFile,BufRead *.js,*.javascript,*.es,*.JS	setf javascript
 
-" perl
-"autocmd BufNewFile,BufRead *.pl compiler perl
