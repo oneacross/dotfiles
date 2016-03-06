@@ -86,3 +86,6 @@ au BufNewFile,BufRead *.tcl,*.*tcl,*.tk,*.itcl,*.itk,*.jacl	setf tcl
 " JavaScript, ECMAScript
 au BufNewFile,BufRead *.js,*.javascript,*.es,*.JS	setf javascript
 
+" Map to build c++14 on clang and execute.
+":map ,g :w<CR>:!clang++ % --std=c++14 && ./a.out<CR>
+
